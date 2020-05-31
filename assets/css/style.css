@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial Narrow', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #eee;
+  background: #141518;
+}
+/* Navigation */
+header {
+  padding: 35px 35px;
+  background-color: #333;
+  background-image: url("../images/header-background.jpg");
+  background-size: cover;
+  background-position: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  color: #eee;
+}
+
+header a {
+  text-decoration: none;
+  color: #eee;
+}
+
+header nav ul {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+header nav ul li a {
+  padding: 10px 10px;
+  margin: 0 20px;
+  border-bottom: 2px solid;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  background: #eee;
+  color: #141518;
+  border-radius: 15px;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 20px;
+}
+/* Section Titles About Me, Work, Contact Me */
+section p {
+  padding-left: 20px;
+  width: 80%; 
+}
+.section-containers {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  margin-right: 50px;
+}
+.section-title {
+  border-right: 2px solid; 
+  width: 15%; 
+  text-align: right; 
+}
+
+/* Work and experience*/
+
+ .work-grid-container {
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   padding: 20px;
+ }
+ .work-grid-item {
+  padding: 15px 0;
+  border: 2px solid #024e76;
+  margin: 5px; 
+  display: flex;
+ }
+ .work-grid-item.run-buddy {
+   grid-column: 1 / span 2;
+   grid-row: 1 / span 2;
+ }
+ .work-grid-item:hover {
+  opacity: 0.5;
+ }
+ 
+
+ /* img inserted in html vs image background in css above*/
+/*.work-grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+}*/
+ .grid-text {
+   display: flex;
+   margin-top: auto; 
+   background-color: rgb(51, 224, 255);
+   padding: 10px; 
+   color: #024e76;
+   font-weight: bold;
+ }
+ 
+ /* Contact Information*/
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer ul {
+  width: 80%; 
+  padding-left: 20px;
+  display: flex;
+  flex: wrap; 
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  padding: 10px;
+  color: #eee;
+
+}
+footer ul li {
+  padding: 10px; 
+  border-bottom: 2px solid;
+  margin: auto;
+  flex: wrap; 
+}
+footer ul li:hover {
+  background: #eee;
+  color: #141518;
+  border-radius: 15px;
+  font-weight: bold;
+}
+footer ul li a:hover {
+  color: #141518;
+  font-weight: bold;
+}
+
+.run-buddy{
+  background-image: url("../images/run-buddy-preview.jpg");
+  background-size: cover; 
+} 
+
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER*/
+@media screen and (max-width: 980px) {
+  header {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+  }
+  header h1 {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+    margin-top: 50px;
+    justify-content: center; 
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav ul li a {
+    border: none;
+  }
+  .section-containers {
+    display: block;
+
+  }
+  .section-containers h2 {
+    width: 100%; 
+    text-align: center;
+    border-right: none;
+    border-bottom: 2px solid;
+    margin-bottom: 10px;
+  }
+  footer ul {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+  }
+  footer ul li {
+    border: none;
+    text-align: left;
+  }
+  footer ul li a {
+    padding: 0; 
+  }
+  
+}

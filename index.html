@@ -1,41 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML + CSS</title>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Alvaro's Porfolio</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
-    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
-  </head>
+    <body>
+        <header>
+            <h1>Alvaro Saldana</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#contact-me">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#resume">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="about-me" class="section-containers">
+            <h2 class="section-title">About Me</h2>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illo dolor dolore, nemo neque rerum atque laudantium officiis iure minima quo totam, ipsa eveniet in at explicabo libero deserunt. At?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, rem odio veritatis consequatur corrupti eum inventore dignissimos placeat cumque voluptatum blanditiis nostrum, voluptas nulla animi mollitia temporibus? Dolorem, porro expedita? <a href="http://www.lipsum.com/">www.lipsum.com</a> </br> </br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis laborum nesciunt ducimus molestiae vitae, asperiores dignissimos magnam voluptate ab quisquam vel doloremque alias ratione. Ad delectus officiis accusamus repellendus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aperiam delectus dolorem accusamus nam! Praesentium explicabo distinctio accusantium expedita quisquam amet officiis, maiores unde architecto quaerat iure voluptate, at tempora.
+                </p>
+        </section>
+    
+        <section id="work" class="section-containers">
+            <h2 class="section-title">Work</h2>
+            
+                <div class="work-grid-container">
+                        <a class="work-grid-item run-buddy" href="https://asaldana1108.github.io/run-buddy/" target="_blank">
+                        <div class="grid-text">Run Buddy</div>
+                        </a>
+                    <div class="work-grid-item rhcp">
+                        <div class="grid-text">RHCP Fanpage</div>
+                    </div>
+                    <div class="work-grid-item box3">
+                        <div class="grid-text">Horiseon Code Refactor Challenge</div>
+                    </div>
+                    <div class="work-grid-item box4">
+                        <div class="grid-text">Facebook Page Placeholder</div>
+                    </div>
+                    <div class="work-grid-item box5">
+                        <div class="grid-text">Box 5 place holder</div>
+                    </div>
+                </div> <!--work-grid-container-->
+            
+        </section> <!--end work section-->
 
-  <body>
-    <header>
-      <h1>Your Name</h1>
-    </header>
-
-    <div class="container">
-      <section id="main-bio">
-        <h2>Portfolio</h2>
-
-        <img
-          id="bio-image"
-          src="https://placehold.it/200x200"
-          alt="Your Name"
-        />
-
-        <p>
-          Write a short paragraph or two about yourself, or use placeholder text
-          from <a href="http://www.lipsum.com/">www.lipsum.com</a>
-        </p>
-      </section>
-
-      <section id="contact-info">
-        <h2>Contact Info</h2>
-        <ul>
-          <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-          <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-          <li><strong>LinkedIn:</strong> <a href="#">coming soon</a></li>
-        </ul>
-      </section>
-    </div>
-  </body>
+        <footer id="contact-me" class="section-containers">
+            <h2 class="section-title">Contact Me</h2>
+            <ul>
+                <li> 956-251-0203</li>
+                <li><a href="mailto:asaldana1108@gmail.com">asaldana1108@gmail.com</a></li>
+                <li><a href="https://github.com/asaldana1108" target="_blank">GitHub: github.com/asaldana1108</a></li>
+                <li><a href="https://www.linkedin.com/in/asaldana1108/" target="_blank">LinkedIn: asaldana1108</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
