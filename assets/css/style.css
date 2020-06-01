@@ -3,18 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --textcolor: #eee;
+  --background: #141518;
+  --backgroundcolor: #333;
+  --worktextbackground: rgb(51, 224, 255);
+  --gridbordercolor: #024e76;
+}
 
 body {
   font-family: 'Helvetica', 'Arial Narrow', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
   line-height: 150%;
-  color: #eee;
-  background: #141518;
+  color: var(--textcolor);
+  background: var(--background);
 }
 /* Navigation */
 header {
   padding: 35px 35px;
-  background-color: #333;
+  background-color: var(--backgroundcolor);
   background-image: url("../images/header-background.jpg");
   background-size: cover;
   background-position: 100%;
@@ -27,12 +34,12 @@ header h1 {
   margin: 0;
   font-weight: bold;
   font-size: 36px;
-  color: #eee;
+  color: var(--textcolor);
 }
 
 header a {
   text-decoration: none;
-  color: #eee;
+  color: var(--textcolor);
 }
 
 header nav ul {
@@ -57,6 +64,15 @@ h2 {
   font-size: 30px;
   padding: 20px;
 }
+.hero {
+  background-image: url("../images/hero-background.jpg");
+  background-size: cover; 
+  height: 100px; 
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
 /* Section Titles About Me, Work, Contact Me */
 section p {
   padding-left: 20px;
@@ -67,11 +83,22 @@ section p {
   padding: 20px;
   align-items: center;
   margin-right: 50px;
+  flex: wrap; 
 }
 .section-title {
   border-right: 2px solid; 
   width: 15%; 
   text-align: right; 
+}
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  flex: wrap;
+}
+
+.about-me-container img {
+  width: 20%;
 }
 
 /* Work and experience*/
@@ -84,7 +111,7 @@ section p {
  }
  .work-grid-item {
   padding: 15px 0;
-  border: 2px solid #024e76;
+  border: 2px solid var(--gridbordercolor);
   margin: 5px; 
   display: flex;
  }
@@ -95,17 +122,10 @@ section p {
  .work-grid-item:hover {
   opacity: 0.5;
  }
- 
-
- /* img inserted in html vs image background in css above*/
-/*.work-grid-item img {
-  max-width: 100%;
-  max-height: 100%;
-}*/
  .grid-text {
    display: flex;
    margin-top: auto; 
-   background-color: rgb(51, 224, 255);
+   background-color: var(--worktextbackground);
    padding: 10px; 
    color: #024e76;
    font-weight: bold;
@@ -128,7 +148,7 @@ footer ul {
 footer a {
   text-decoration: none;
   padding: 10px;
-  color: #eee;
+  color: var(--textcolor);
 
 }
 footer ul li {
@@ -148,12 +168,31 @@ footer ul li a:hover {
   font-weight: bold;
 }
 
-.run-buddy{
+.run-buddy {
   background-image: url("../images/run-buddy-preview.jpg");
   background-size: cover; 
+  text-decoration: none;
 } 
-
-
+.box2 {
+  background-image: url("../images/place-holder-image.jpg");
+  background-size: cover;
+  text-decoration: none;
+}
+.box3 {
+  background-image: url("../images/place-holder-image.jpg");
+  background-size: cover;
+  text-decoration: none;
+}
+.box4 {
+  background-image: url("../images/place-holder-image.jpg");
+  background-size: cover;
+  text-decoration: none;
+}
+.box5 {
+  background-image: url("../images/place-holder-image.jpg");
+  background-size: cover;
+  text-decoration: none;
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER*/
 @media screen and (max-width: 980px) {
