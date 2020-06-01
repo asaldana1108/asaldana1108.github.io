@@ -124,7 +124,7 @@ section p {
  }
  .grid-text {
    display: flex;
-   margin-top: auto; 
+   margin-top: auto;
    background-color: var(--worktextbackground);
    padding: 10px; 
    color: #024e76;
