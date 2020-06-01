@@ -95,6 +95,7 @@ section p {
   display: flex;
   align-items: center;
   flex: wrap;
+  width: 80%;
 }
 
 .about-me-container img {
@@ -102,7 +103,6 @@ section p {
 }
 
 /* Work and experience*/
-
  .work-grid-container {
    display: grid; 
    grid-template-columns: repeat(3, 1fr);
