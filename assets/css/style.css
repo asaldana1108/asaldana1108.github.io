@@ -119,6 +119,10 @@ section p {
    grid-column: 1 / span 2;
    grid-row: 1 / span 2;
  }
+ .work-grid-item.bored_at_home {
+   grid-column: 3/4;
+   grid-row: 1 / span 3;
+ }
  .work-grid-item:hover {
   opacity: 0.5;
  }
@@ -173,9 +177,10 @@ footer ul li a:hover {
   background-size: cover; 
   text-decoration: none;
 } 
-.box2 {
-  background-image: url("../images/place-holder-image.jpg");
+.bored_at_home {
+  background-image: url("../images/bored_at_home.jpg");
   background-size: cover;
+  background-position: center;
   text-decoration: none;
 }
 .box3 {
