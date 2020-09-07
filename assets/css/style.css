@@ -123,6 +123,11 @@ section p {
    grid-column: 3/4;
    grid-row: 1 / span 3;
  }
+
+ .work-grid-item.reading-nook {
+  grid-column: 1/3;
+  grid-row: 3 / span 4;
+}
  .work-grid-item:hover {
   opacity: 0.5;
  }
@@ -183,8 +188,8 @@ footer ul li a:hover {
   background-position: center;
   text-decoration: none;
 }
-.box3 {
-  background-image: url("../images/place-holder-image.jpg");
+.reading-nook {
+  background-image: url("../images/the-reading-nook.png");
   background-size: cover;
   text-decoration: none;
 }
